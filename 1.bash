@@ -11,4 +11,4 @@ mv payload.php index.php
 chmod 777 *
 cd ..
 chmod 777 *
-cd html
+cd html 
