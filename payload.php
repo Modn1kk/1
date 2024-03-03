@@ -1,7 +1,7 @@
 <?php  
 
 if (!empty($_GET["ping"])){
-	$currentPageUrl = $_SERVER["HTTP_HOST"];
+	$currentPageUrl = $_SERVER["HTTP_HOST"]; 
 	echo "bot: ", $currentPageUrl.$_SERVER["SCRIPT_NAME"], " | pong";
 }
 
